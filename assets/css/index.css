@@ -1,0 +1,21 @@
+.layui-icon {
+    margin-right: 10px !important;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.layui-side-scroll .userinfo {
+    height: 60px ;
+    border-bottom: 1px solid #000;
+    line-height: 60px;
+    text-align: center;
+    user-select: none;
+    font-size: 14px;
+}
+.layui-side-scroll .userinfo img {
+    height: 40px;
+    width: 40px;
+}

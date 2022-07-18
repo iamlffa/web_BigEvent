@@ -27,12 +27,6 @@ $(function(){
             }
         }
     })
-
-    // $.ajaxPrefilter预过滤请求用于拼接请求url
-    $.ajaxPrefilter(function(options){
-        options.url = 'http://www.liulongbin.top:3007' + options.url
-    })
-
     // layui的消息提示
     let layer = layui.layer
     // 监听注册表单的提交行为，调用ajax发起注册请求
@@ -65,7 +59,7 @@ $(function(){
             // 登陆成功，将token存储到本地存储中
             localStorage.setItem('token',res.token)
             // 登陆成功 跳转到后台主页
-            // location.href = '/index.html'
+            location.href = '/index.html'
         }
        })
     })
